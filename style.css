@@ -1,0 +1,43 @@
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#modalContent {
+    background-color: lightblue;
+    margin: 15% auto;
+    padding: 20px;
+    width: 40%;
+    box-shadow: inset 0 0 0 7px rgba(255,255,255,.5);
+    border-radius: 20px/60px;
+    text-align: center;
+}
+
+#closeModal {
+    position: relative;
+    color: black;
+    user-select: none;
+    padding: .8em 2em;
+    outline: none;
+    background-color: skyblue;
+    background-image: linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255,255,255,.7) 0%, rgba(255,255,255,.5) 50%, rgba(0,0,0,0) 50%);
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto;
+    background-position: 200% 0, 0 0;
+    box-shadow: rgba(0,0,0,.3) 0 2px 5px;
+} 
+#closeModal:active {
+  top: 1px;
+  box-shadow: none;
+}
+#closeModal:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0;
+}
